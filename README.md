@@ -1,10 +1,10 @@
-# Welcome onboard to the Cypress Journey
+# 🧭 Welcome onboard to the Cypress Journey 
 
-### What is Cypress?
+### 📌 What is Cypress?
 Cypress is a front-end test automation tool designed to simplify the creation of user interface (UI) tests. Unlike other automation tools, such as Selenium, which work outside the browser, Cypress runs directly in the browser, offering a more integrated and agile testing experience.
 Cypress is ideal for projects that need a robust testing tool with a fast learning curve and native integration for modern JavaScript applications.
 
-### Installing
+### 📌 Installing
 
 [To system requirements, click here](https://docs.cypress.io/app/get-started/install-cypress#System-requirements)
 
