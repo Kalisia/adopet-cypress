@@ -22,7 +22,8 @@ Explaining by files:
 
 #### File cadastro
 
-![image](https://github.com/user-attachments/assets/2667324b-44f5-4a02-b3b7-f97c5d4acf3e)
+![image](https://github.com/user-attachments/assets/a38b5e75-7f49-4d65-8156-825917fce9d3)
+
 
 
 `cadastro.cy.js`
@@ -35,7 +36,7 @@ when we insert .type() we expect something to be typed into a field, as in the e
 
 #### File cadastro-erro
 
-![image](https://github.com/user-attachments/assets/03634269-df54-4a5f-8c49-714d42522d73)
+![image](https://github.com/user-attachments/assets/5561e267-47a5-4bc8-8e95-4c94a27af1b1)
 
 
 `cadastro-erro.cy.js`
@@ -46,5 +47,30 @@ You can see that some commands are repeated, so let's talk about the new ones.
 .cy.contains() captures the element that contains text, in this case we put the text that should be expected to be visible and this is when we use .should('be.visible').
 
 
+### 📌 API test with Cypress
+
+Let's start! Line by line, a simple API to be a simple to understand.
+
+Let's use Cypress to test the Petstore API.
+
+![image](https://github.com/user-attachments/assets/824b0dbc-93f8-4d0e-9dca-f1100d9083dd)
+
+
+`cy.request`
+Cypress makes an HTTP request. This method is used to send and receive data from APIs directly, without the need to interact with the user interface.
+
+method: `'GET':` Defines the HTTP method to be used, in this case GET.
+url: `'https://petstore.swagger.io/v2/store/inventory'`: Specifies the API endpoint to be tested.
+
+`.then((response)`
+After the request, the response returned by the API is captured in the then function, and the response object contains the response data (such as the status, headers and body).
+
+`expect(response.status).to.eq(200)`
+Here an assertion is made to check that the status of the HTTP response is equal to 200. This code guarantees that the API responded successfully (code 200 means that the request was processed correctly).
+
+The test checks that the https://petstore.swagger.io/v2/store/inventory endpoint is working correctly by returning an HTTP response with status 200. If the status is different from 200, the test will fail, indicating a problem with the API.
+
+You can check the swagger here!
+https://petstore.swagger.io
 
 
