@@ -1,5 +1,5 @@
-describe('petstore API test', () => {
-    it('Pet inventories', () => {
+describe('petstore API', () => {
+    it('inventories', () => {
       cy.request({
         method: 'GET',
         url: 'https://petstore.swagger.io/v2/store/inventory'
