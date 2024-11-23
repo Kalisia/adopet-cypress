@@ -1,4 +1,4 @@
-describe('petstore API', () => {
+describe('petstore API test', () => {
     it('Pet inventories', () => {
       cy.request({
         method: 'GET',
