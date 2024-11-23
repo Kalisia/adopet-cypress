@@ -1,3 +1,6 @@
+//Cypress.Commands.add('login', (email, password) => { ... })
+
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
