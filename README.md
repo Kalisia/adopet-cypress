@@ -70,6 +70,11 @@ Here an assertion is made to check that the status of the HTTP response is equal
 
 The test checks that the https://petstore.swagger.io/v2/store/inventory endpoint is working correctly by returning an HTTP response with status 200. If the status is different from 200, the test will fail, indicating a problem with the API.
 
+### And here is the result of the test going well!
+
+![image](https://github.com/user-attachments/assets/34eaf04a-c43e-4fd7-94e0-e1506b2f1171)
+
+
 You can check the swagger here!
 https://petstore.swagger.io
 
